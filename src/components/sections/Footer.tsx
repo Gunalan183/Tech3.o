@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2 lg:col-span-1">
             <div className="flex flex-wrap justify-start">
               <motion.h3 
-                className="text-2xl font-bold mb-4 flex chopsic-font"
+                className="text-2xl font-bold mb-4 flex chopsic-font title-enhanced"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                     key={i}
                     className={`${letter === ' ' ? 'mx-1' : ''} text-neonBlue`}
                     style={{
-                     
+                      textShadow: '0 0 1px currentColor, 0 0 2px currentColor'
                     }}
                   >
                     {letter}

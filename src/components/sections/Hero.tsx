@@ -44,40 +44,35 @@ const Hero: React.FC = () => {
         >
           {/* For larger screens */}
           <div className="hidden md:block">
-            <span className="subtle-flicker" style={{ 
-              color: '#ffd700',
-              textShadow: '0 0 1px #ffd700'
-            }}>TECH</span>
-            <span className="subtle-flicker" style={{ 
-              color: '#ffffff',
-              textShadow: '0 0 1px #ffffff',
-              animationDelay: '0.5s'
-            }}>TRONICS</span>
-            <span className="subtle-flicker" style={{ 
-              color: '#ffd700',
-              textShadow: '0 0 1px #ffd700',
-              animationDelay: '1s'
-            }}>'25</span>
+            <span className="subtle-flicker" 
+              style={{color: '#ffd700', animationDelay: '0.2s'}}
+            >TECH</span>
+            <span className="subtle-flicker" 
+              style={{color: '#ffffff', animationDelay: '0.5s'}}
+            >TRONICS</span>
+            <span className="subtle-flicker" 
+              style={{color: '#ffd700', animationDelay: '1s'}}
+            >'25</span>
           </div>
           
           {/* For mobile screens */}
           <div className="md:hidden">
             <div>
-              <span className="subtle-flicker" style={{ 
-                color: '#ffd700',
-                textShadow: '0 0 1px #ffd700'
-              }}>TECH</span>
-              <span className="subtle-flicker" style={{ 
-                color: '#ffffff',
-                textShadow: '0 0 1px #ffffff',
-                animationDelay: '0.5s'
-              }}>TRONICS</span>
+              <span className="subtle-flicker" 
+                style={{color: '#ffd700', animationDelay: '0.2s'}}
+              >TECH</span>
+              <span className="subtle-flicker" 
+                style={{color: '#ffffff', animationDelay: '0.5s'}}
+              >TRONICS</span>
             </div>
-            <span className="subtle-flicker" style={{ 
-              color: '#ffd700',
-              textShadow: '0 0 1px #ffd700',
-              animationDelay: '1s'
-            }}>'25</span>
+            <span className="subtle-flicker" 
+              style={{color: '#ffd700', animationDelay: '1s'}}
+            >'25</span>
+          </div>
+          
+          {/* Invisible element to preload fonts */}
+          <div className="preload-fonts" aria-hidden="true">
+            <span className="chopsic-font">TECHTRONICS'25</span>
           </div>
         </h1>
         
