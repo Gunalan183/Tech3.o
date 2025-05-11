@@ -73,7 +73,7 @@ const BackgroundAudio: React.FC = () => {
   
   return (
     <>
-      <audio ref={audioRef} src="/backgroundMusic.mp3" />
+      <audio ref={audioRef} src={`${process.env.PUBLIC_URL}/backgroundMusic.mp3`} />
       
       <AnimatePresence>
         {showControls && (

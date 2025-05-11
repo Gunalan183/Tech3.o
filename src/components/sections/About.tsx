@@ -15,7 +15,7 @@ const About: React.FC = () => {
           className="absolute top-0 left-0 w-full h-full object-cover opacity-20"
           style={{ filter: 'brightness(0.3) contrast(1.2) blur(1px)' }}
         >
-          <source src="/BackgroundVidio.mp4" type="video/mp4" />
+          <source src={`${process.env.PUBLIC_URL}/BackgroundVidio.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Overlay to darken video */}
