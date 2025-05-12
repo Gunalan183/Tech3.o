@@ -56,7 +56,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
     }
   };
   
-  const letters = ['T', 'E', 'C', 'H', ' ', 'T', 'R', 'O', 'N', 'I', 'C', 'S', "'", '2', '5'];
+  const letters = ['T', 'E', 'C', 'H', 'T', 'R', 'O', 'N', 'I', 'C', 'S', "'", '2', '5'];
   
   return (
     <motion.div 

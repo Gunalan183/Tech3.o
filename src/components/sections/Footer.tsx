@@ -1,12 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import TechBackground from '../common/TechBackground';
 
 const Footer: React.FC = () => {
   return (
     <footer className="py-12 border-t border-gray-800 relative">
       {/* Technical animated background */}
-      <TechBackground variant="blue" intensity="low" animated={true} />
       
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

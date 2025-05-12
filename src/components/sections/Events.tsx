@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+  import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import TechBackground from '../common/TechBackground';
 
 interface Event {
   id: number;
@@ -179,7 +178,7 @@ const Events: React.FC = () => {
   const events: Event[] = [
     {
       id: 1,
-      title: 'Frontend Design',
+      title: 'Vision UI Forge',
       description: 'Showcase your UI/UX skills by designing and developing a responsive web interface based on the provided theme.',
       icon: '💻',
       type: 'Technical',
@@ -196,12 +195,12 @@ const Events: React.FC = () => {
       coordinators: [
         { name: '  SIVA SANJAY K ', phone: '9342806827' },
         { name: ' DARUNKISHORE C', phone: '9855405872' },
-        { name: '  SRIMATHI K', phone: '9855405872' }
+        { name: '  SRIMATHI K', phone: '9042600146' }
       ]
     },
     {
       id: 2,
-      title: 'Paper Presentation',
+      title: 'Stark Expo',
       description: 'Present your research papers on emerging technologies like AI, ML, Blockchain, IoT, or Cybersecurity.',
       icon: '📝',
       type: 'Technical',
@@ -218,14 +217,14 @@ const Events: React.FC = () => {
       coordinators: [
         { name: ' SRINITHI D', phone: '9876543212' },
         { name: 'Vijay srinivas S', phone:  '9123536026' },
-        { name: 'VISHVA PRIYA S', phone:  '9123536026' }
+        { name: 'VISHVA PRIYA S', phone:  '8825996174' }
       ]
     },
     {
       id: 3,
-      title: 'Debugging',
+      title: 'Ultron Debug Protocol',
       description: 'Hunt down and fix bugs in provided code snippets against the clock. Test your problem-solving skills!',
-      icon: '🐛',
+      icon: '👾',
       type: 'Technical',
       rules: [
         ' Mobile phones will not be allowed',
@@ -233,8 +232,8 @@ const Events: React.FC = () => {
         'Avoid unnecessary malpractice',
         'Three rounds will be conducted with time constraints',
         ' I Round : 20 minutes',
- 'II Round : 15 minutes',
- 'III Round : 10 minutes',
+ 'II Round : 25 minutes',
+ 'III Round : 20 minutes',
  ' Last 15 minutes for review',
  'Languages - python , java',
       ],
@@ -243,12 +242,12 @@ const Events: React.FC = () => {
       coordinators: [
         { name: 'KAMESHWARAN S', phone: '8610863860' },
         { name: ' MADHUMITHA V ', phone: '9360464095' },
-        { name: 'SANJAY ELANGOVAN', phone: '9360464095' }
+        { name: 'SANJAY ELANGOVAN', phone: '9345478189' }
       ]
     },
     {
       id: 4,
-      title: 'Cyfer Shift',
+      title: 'Iron Code Shift',
       description: 'Crack codes, solve encryption puzzles, and navigate through cybersecurity challenges in this cryptography event.',
       icon: '🔐',
       type: 'Technical',
@@ -265,12 +264,12 @@ const Events: React.FC = () => {
       coordinators: [
         { name: 'SHUBHANSHU NAVADIYA', phone: '9876543216' },
         { name: 'RAKESH K', phone: '9345494500' },
-        { name: 'VARSHA K', phone: '9345494500' }
+        { name: 'VARSHA K', phone: '9361344139' }
       ]
     },
     {
       id: 5,
-      title: 'IPL Auction',
+      title: 'Avengers Draft War',
       description: 'Test your cricket knowledge and strategic thinking in this virtual IPL auction simulation.',
       icon: '🏏',
       type: 'Non-Technical',
@@ -285,12 +284,12 @@ const Events: React.FC = () => {
       coordinators: [
         { name: ' JOHNIE N', phone: '9876543218' },
         { name: ' MANIKANDAN B', phone: '9962366872' },
-        { name: ' SANTHOSH KUMAR M', phone: '9962366872' }
+        { name: ' SANTHOSH KUMAR M', phone: '9344660682' }
       ]
     },
     {
       id: 6,
-      title: 'Connections & Memorize',
+      title: 'Mind Stone Trials',
       description: 'Test your memory skills and ability to find connections between seemingly unrelated images and concepts.',
       icon: '🧩',
       type: 'Non-Technical',
@@ -312,12 +311,12 @@ const Events: React.FC = () => {
       coordinators: [
         { name: 'MOHAMED MOOSHA S', phone: '9876543220' },
         { name: 'HARISHETHIRA R', phone: '8072951693' },
-        { name: 'GOWTHAM PRABAGARAN S', phone: '8072951693' }
+        { name: 'PADMA', phone: '8190033017' }
       ]
     },
     {
       id: 7,
-      title: 'Free Fire',
+      title: 'Battle of Wakanda',
       description: 'Compete in this popular battle royale game to show off your gaming skills and teamwork.',
       icon: '🎮',
       type: 'Non-Technical',
@@ -336,12 +335,12 @@ const Events: React.FC = () => {
       coordinators: [
         { name: ' SHIGIN K S', phone: '7695986629' },
         { name: 'RAGUL K', phone: '7904978433' },
-        { name: 'RSANJAY S K ', phone: '9876543223' }
+        { name: 'SANJAY S K ', phone: '6369857695' }
       ]
     },
     {
       id: 8,
-      title: 'Chess',
+      title: 'Doctor Stranges Strategy Realm',
       description: 'Showcase your strategic thinking and planning in this classic game of intellect.',
       icon: '♟️',
       type: 'Non-Technical',
@@ -355,10 +354,10 @@ const Events: React.FC = () => {
       coordinators: [
         { name: 'PAPPU KUMAR ', phone: '9876543224' },
         { name: 'AL AMEEM H', phone: '7904610976' },
-        { name: 'PRAVEENRAJ K', phone: '9876543225' }
+        { name: 'PRAVEEN RAJ K', phone: '8825401331' }
       ]
     },
-  ];
+  ]; 
 
   const filteredEvents = events.filter(event => {
     if (activeTab === 'all') return true;
@@ -397,7 +396,7 @@ const Events: React.FC = () => {
       </div>
       
       {/* Technical animated background */}
-      <TechBackground variant="dark" intensity="medium" animated={true} />
+      {/* Technical background removed */}
 
       <AnimatePresence>
         {selectedEvent && <EventModal event={selectedEvent} onClose={closeModal} />}

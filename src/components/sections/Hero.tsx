@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import TechBackground from '../common/TechBackground';
 
 // We'll use CSS classes for the neon flicker effect
 
@@ -24,8 +23,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-darkBg opacity-50"></div>
       </div>
       
-      {/* Technical animated background */}
-      <TechBackground variant="default" intensity="medium" animated={true} />
+      {/* Technical background removed */}
       
       <div className="container mx-auto px-4 text-center z-10 relative">
         {/* Royal decorative elements */}
@@ -59,14 +57,14 @@ const Hero: React.FC = () => {
           <div className="md:hidden">
             <div>
               <span className="subtle-flicker" 
-                style={{color: '#ffd700', animationDelay: '0.2s'}}
+                style={{color: '#9e0d0d', animationDelay: '0.2s'}}
               >TECH</span>
               <span className="subtle-flicker" 
-                style={{color: '#ffffff', animationDelay: '0.5s'}}
+                style={{color: '#f5c802', animationDelay: '0.5s'}}
               >TRONICS</span>
             </div>
             <span className="subtle-flicker" 
-              style={{color: '#ffd700', animationDelay: '1s'}}
+              style={{color: '#9e0d0d', animationDelay: '1s'}}
             >'25</span>
           </div>
           

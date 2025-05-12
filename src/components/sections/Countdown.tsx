@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import TechBackground from '../common/TechBackground';
 
 const Countdown: React.FC = () => {
   // Set the event date (May 17, 2025)
@@ -71,8 +70,7 @@ const Countdown: React.FC = () => {
 
   return (
     <section className="py-16 relative overflow-hidden bg-darkBg/90">
-      {/* Technical animated background */}
-      <TechBackground variant="blue" intensity="low" animated={true} />
+      {/* Technical background removed */}
       
       <div className="container mx-auto px-4">
         <motion.div 

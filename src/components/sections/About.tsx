@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import TechBackground from '../common/TechBackground';
 
 const About: React.FC = () => {
   return (
@@ -22,8 +21,7 @@ const About: React.FC = () => {
         <div className="absolute inset-0 bg-darkBg opacity-60"></div>
       </div>
       
-      {/* Technical animated background */}
-      <TechBackground variant="purple" intensity="low" animated={true} />
+      {/* Technical background removed */}
       
       <div className="container mx-auto px-4">
         <motion.div 
