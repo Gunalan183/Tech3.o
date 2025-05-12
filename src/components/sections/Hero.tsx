@@ -57,14 +57,14 @@ const Hero: React.FC = () => {
           <div className="md:hidden">
             <div>
               <span className="subtle-flicker" 
-                style={{color: '#9e0d0d', animationDelay: '0.2s'}}
+                style={{color: '#ffd700', animationDelay: '0.2s'}}
               >TECH</span>
               <span className="subtle-flicker" 
-                style={{color: '#f5c802', animationDelay: '0.5s'}}
+                style={{color: '#ffffff', animationDelay: '0.5s'}}
               >TRONICS</span>
             </div>
             <span className="subtle-flicker" 
-              style={{color: '#9e0d0d', animationDelay: '1s'}}
+              style={{color: '#ffd700', animationDelay: '1s'}}
             >'25</span>
           </div>
           
